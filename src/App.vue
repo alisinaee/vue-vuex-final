@@ -1,28 +1,26 @@
 <template>
-  <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+  <div class="app container">
+    <child1-cmp></child1-cmp>
+    <child2-cmp></child2-cmp>
+    <br>
+    <br>
+    <child3-cmp></child3-cmp>
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import child1 from "./components/child1";
+import child2 from "./components/child2";
+import child3 from "./components/child3";
 
 export default {
-  name: 'App',
   components: {
-    HelloWorld
-  }
-}
+    "child1-cmp": child1,
+    "child2-cmp": child2,
+    "child3-cmp": child3,
+  },
+};
 </script>
 
 <style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-}
 </style>
